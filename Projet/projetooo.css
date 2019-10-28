@@ -1,0 +1,204 @@
+h1
+{
+	background-image: linear-gradient(to right, #87CCEB , transparent, transparent, transparent);
+	border-radius:10px;
+}
+body 
+{
+  animation-duration: 3s;
+  animation-name: slidein;
+  background-image:url('imagens/pedecoqueiro.jpg');
+  font-family:fantasy;
+}
+@keyframes slidein
+{
+  from {
+    margin-bottom:0px;
+    margin-top:100%;
+}
+  to {
+    margin-top: 0px;
+    margin-bottom:100%;
+  }
+}
+#s
+{
+	border-top:solid;
+	border-bottom:solid;
+	border-color:white;
+	font-size:25px;
+	color: white;
+  	text-shadow: rgba(1220,100,128, .8) 0px 0px 4px;
+}
+#fr
+{
+	float:right;
+}
+div
+{
+	margin:0 auto;
+	color:white;
+	background-color:rgba(0,0,0,0.9);
+	padding:15px;
+}
+button
+{
+	-webkit-transition-duration: 0.4s;
+	border-radius:30px;
+	border-color:blue;
+	background-color:#3B5990;
+	font-size:15px;
+}
+@keyframes vinicius
+{
+	from{
+		border-color:red;
+	}
+	to{
+		border-color:black;
+	}
+}
+#exi,#err,#cor,#l1,#l2,#pre
+{
+	animation-name:busis;
+	animation-duration:4s;
+}
+@keyframes busis
+{
+	0%{opacity:0}
+	100%{opacity:1}
+}
+#menu
+{
+	border:solid;
+	border-radius:70px;
+	margin:0 auto;
+	width:300px;
+	animation-name:vinicius;
+	animation-duration:2s;
+	animation-iteration-count:infinite;
+}
+#emp
+{
+	width:400px;
+	font-family: cursive;
+	animation-name:opa;
+	animation-duration:2s;
+}
+#cadastro
+{
+	animation-name:opa;
+	animation-duration:2s;
+	width:380px;
+	text-shadow: rgba(250,100,18, .8) 0px 0px 4px;
+	border: 10px solid transparent;
+	border-image: url('imagens/border cópia2.png')30 round;
+}
+#login
+{
+	animation-name:opa;
+	animation-duration:2s;
+	text-shadow: rgba(1220,100,128, .8) 0px 0px 4px;
+	width: 250px;
+	border: 10px solid transparent;
+	border-image: url('imagens/border cópia1.png')30 round;
+}
+#cri,#ido,#ma
+{
+	width:500px;
+	font-family:cursive;
+	animation-name:opa;
+	animation-duration:2s;
+}
+@keyframes opa
+{
+	from{
+		opacity:0.1;
+	}
+	to{
+		opacity:1;
+	}
+}
+button:hover
+{
+	 box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.bi
+{
+	height:30px;
+	width:150px;
+}
+.bi:hover
+{
+	transition-duration:1s;
+	height:35px;
+	width:180px;
+	font-size:20px;
+}
+.invisivel
+{
+	display:none;
+}
+.visivel
+{
+	display:block;
+}
+.centro
+{
+	margin:0 auto;
+}
+#exi,#err,#cor,#l1,#l2,#pre
+{
+	text-align:center;
+}
+#exi,#err,#l1,#l2,#pre{
+	color:#ff0000;
+}
+#cor
+{
+	color:#00a000;
+}
+.anima
+{
+	display:block;
+	animation-name:opa;
+	animation-duration:2s;
+}
+table
+{
+	color:white;
+}
+fieldset
+{
+	border:none;
+	width:300px;
+}
+#cp,#np
+{
+	background-color:transparent;
+	border-color:rgba(0,0,0,0.1);
+	color:black;
+	font-size:17px;
+	font-family:'Arial' fantasy;
+}
+#a1,#a2,#a3
+{
+	border-radius:4px;
+	border-color:green;
+}
+.spas
+{
+	width:80px;
+}
+#linha
+{
+	border:1px;
+	border-top:solid;
+}
+#mostrar
+{
+	background-color: rgba(0,0,0,0);
+}
+input{
+	margin: 0 auto;
+}

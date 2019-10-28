@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<title>SejaDoBem</title>
+	<link rel="stylesheet" type="text/css" href="projetooo.css">
+</head>
+
+<body>
+	<h1>SejaDoBem</h1>
+	<div id="menu" class="visivel">
+		<center>
+			<font color="green" id="s">SEJA BEM VINDO</font>
+			<p><button class="bi" onclick="troca('p1')"><b>Cadastrar</b></button></p>
+			<p><button class="bi" onclick="troca('p2')"><b>Login</b></button></p>
+		</center>
+	</div>
+	<div class="invisivel" id="cadastro">
+		<center>
+			<font color="green" id="s">Cadastro</font>
+			<p></p>
+		</center>
+		<form>
+			<div style="display: flex; flex-wrap: wrap;">
+				<input type="text" id="nome" placeholder="Nome">
+				<input type="number" id="telefone" placeholder="Telefone">
+				<input type="text" id="cidade" placeholder="Cidade">
+				<input type="text" id="idade" placeholder="Idade">
+				<input type="text" id="email" placeholder="E-mail">
+				<input type="text" id="cpf" placeholder="CPF">
+				<tr>
+					<td colspan="2"> </td>
+				</tr>
+				<input type="radio" name="genero" value="masc">Masculino<input type="radio" name="genero"
+					value="femin">Feminino<input type="radio" name="genero" value="outro">Outro</td>
+				</tr>
+				<tr>
+					<td> <input type="text" id="conta" placeholder="Nova conta"></td>
+				</tr>
+				<tr>
+					<td> <input type="password" id="senha" placeholder="Senha"></td>
+				</tr>
+				<tr>
+					<td> <input type="password" id="con_senha" placeholder="Confirmar senha"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><button id="fr" type="button"
+							onclick="salvar_usuário(nome.value,telefone.value,idade.value,email.value,cpf.value,conta.value,senha.value,con_senha.value,cidade.value)"><b>Enviar</b></button>
+						<button type="button" onclick="troca('v1')" id="fr"><b>Voltar</b></button></td>
+				</tr>
+				<p><b class="invisivel" id="cor">Usuário cadastrado com sucesso</b><b class="invisivel"
+						id="err">Confirme sua senha corretamente</b><b class="invisivel" id="exi">Conta ja
+						existente</b><b class="invisivel" id="pre">Preencha Todos os Campos</b>
+				</p>
+			</div>
+		</form>
+	</div>
+	<div class="invisivel" id="login">
+		<center>
+			<font color="green" id="s">Login</font>
+		</center>
+		<p></p>
+		<table>
+			<tr>
+				<td><input type="text" id="cl" placeholder="Conta"></td>
+			</tr>
+			<tr>
+				<td><input type="password" id="sl" placeholder="Senha"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><button id="fr" onclick="lg()"><b>Entrar</b></button><button style="float:right;"
+						onclick="troca('v2')"><b>Voltar</b></button></td>
+			</tr>
+			<p><b id="l1" class="invisivel">Conta ou senha incorreta</b><b id="l2" class="invisivel">Usuário não
+					cadastrado</b></p>
+		</table>
+	</div>
+	<section id="img_menus" class="invisivel">
+		<fieldset id="fr" style="float: top;">
+			<legend class="invisivel" id="conec">Usuário conectado</legend>
+			<legend class="visivel" id="desconec">Usuário desconectado</legend>
+			<img src="imagens/anon.png" width="70px" height="66px" class="visivel" id="an" style="float:left;">
+			<img src="imagens/mas.png" width="70px" height="66px" class="invisivel" id="mas" style="float:left;">
+			<img src="imagens/femi.png" width="70px" height="66px" class="invisivel" id="fem" style="float:left;">
+			<p style="float:right;float:top"><label>Nome: </label> <input type="text" disabled="" size="15" id="np"
+					style="border: none"></p>
+			<p style="float:right;"><label>Conta: </label><input type="text" disabled="" size="15" id="cp"
+					style="border: none"></p>
+		</fieldset>
+	</section>
+	<div id="emp" class="invisivel">
+		<h3>Instituições que precisa de sua ajuda</h3>
+		<ul>
+			<li>Lar de crianças Santa Rita<input type="button" id="a1" value="Ajudar" style="float:right;" class="aj"
+					onclick="troca('n1')"></li>
+			<p></p>
+			<li>Lar de idosos<input type="button" id="a2" value="Ajudar" style="float:right;" class="aj"
+					onclick="troca('n2')"></li>
+			<p></p>
+			<li>Instituto de Meio ambiente<input type="button" id="a3" value="Ajudar" style="float:right;" class="aj"
+					onclick="troca('n3')"></li>
+			<p></p>
+		</ul>
+		<h4>Mostrar pessoas que ja doaram <input type="button" onclick="mostrar_doadores()" style="float:right;"
+				value="Mostrar"></h4>
+		<center><button onclick="sairc()"><b>Sair da conta</b></button></center>
+	</div>
+	<div id="cri" class="invisivel">
+		<h3>Lar de crianças Santa Rita</h3>
+		<table>
+			<tr>
+				<td>Endereço: </td>
+				<td class="spas"></td>
+				<td>Rua Toshinobu Katayama - 1033</td>
+			</tr>
+			<tr>
+				<td>Bairro: </td>
+				<td class="spas"></td>
+				<td>Centro</td>
+			</tr>
+			<tr>
+				<td>CEP: </td>
+				<td class="spas"></td>
+				<td>79826110</td>
+			</tr>
+			<tr>
+				<td>Cidade: </td>
+				<td class="spas"></td>
+				<td>Dourados</td>
+			</tr>
+			<tr>
+				<td>Estado: </td>
+				<td class="spas"></td>
+				<td>MS</td>
+			</tr>
+			<tr>
+				<td>País: </td>
+				<td class="spas"></td>
+				<td>Brasil</td>
+			</tr>
+			<tr>
+				<td>Telefone: </td>
+				<td class="spas"></td>
+				<td>34219966</td>
+			</tr>
+			<tr>
+				<td>E-mail:</td>
+				<td class="spas"></td>
+				<td>lsrita@terra.com.br ou monicalarsantarita@hotmail.com.br</td>
+			</tr>
+			<tr>
+				<td>CNPJ: </td>
+				<td class="spas"></td>
+				<td>3623964000184</td>
+			</tr>
+		</table>
+		<hr id="linha">
+		</hr>
+		<h3>Coisas que a instituição está precisando</h3>
+		<ul>
+			<li>Leite<input type="button" onclick="doar_santa_rita()" style="float:right;" value="Doar"> <input
+					type="text" id="leite" placeholder="Quantidade" style="float:right;"></li>
+			<li>Brinquedos<input type="button" onclick="doar_santa_rita()" style="float:right;" value="Doar"><input
+					type="text" id="brinquedos" placeholder="Quantidade" style="float:right;"></li>
+			<li>Alimentos não perecíveis<input type="button" onclick="doar_santa_rita()" style="float:right;"
+					value="Doar"><input type="text" id="alimentos" placeholder="Quantidade" style="float:right;"></li>
+			<li>Roupas infantis<input type="button" onclick="doar_santa_rita()" style="float:right;" value="Doar"><input
+					type="text" id="roupa" placeholder="Quantidade" style="float:right;"></li>
+			<li>Dinheiro<input type="button" onclick="doar_santa_rita()" style="float:right;" value="Doar"><input
+					type="text" id="dinheiro" placeholder="Quantidade" style="float:right;"></li>
+			<input type="button" id="vo1" style="float:right;" value="Voltar" onclick="troca('vo1')">
+		</ul>
+	</div>
+	<div id="ido" class="invisivel">
+		<h3>Lar dos Idosos</h3>
+		<table>
+			<tr>
+				<td>Endereço: </td>
+				<td class="spas"></td>
+				<td>Rua Tiradentes - 75</td>
+			</tr>
+			<tr>
+				<td>Bairro: </td>
+				<td class="spas"></td>
+				<td>Centro</td>
+			</tr>
+			<tr>
+				<td>CEP: </td>
+				<td class="spas"></td>
+				<td>38540000</td>
+			</tr>
+			<tr>
+				<td>Cidade: </td>
+				<td class="spas"></td>
+				<td>Abadia dos Dourados</td>
+			</tr>
+			<tr>
+				<td>Estado: </td>
+				<td class="spas"></td>
+				<td>MS</td>
+			</tr>
+			<tr>
+				<td>País: </td>
+				<td class="spas"></td>
+				<td>Brasil</td>
+			</tr>
+			<tr>
+				<td>Telefone: </td>
+				<td class="spas"></td>
+				<td>34-88418451</td>
+			</tr>
+			<tr>
+				<td>E-mail:</td>
+				<td class="spas"></td>
+				<td>minascontabilidade@yahoo.com.br</td>
+			</tr>
+			<tr>
+				<td>CNPJ: </td>
+				<td class="spas"></td>
+				<td>19925643000174</td>
+			</tr>
+		</table>
+		<hr id="linha">
+		</hr>
+		<h3>Coisas que a instituição está precisando</h3>
+		<ul>
+			<li>Frauda para adultos<input type="button" onclick="doar_lar_dos_idosos()
+" style="float:right;" value="Doar"> <input type="text" id="frauda" placeholder="Quantidade" style="float:right;"></li>
+			<li>Produtos de limpeza<input type="button" onclick="doar_lar_dos_idosos()
+" style="float:right;" value="Doar"><input type="text" id="pdl" placeholder="Quantidade" style="float:right;"></li>
+			<li>Medicamentos<input type="button" onclick="doar_lar_dos_idosos()
+" style="float:right;" value="Doar"><input type="text" id="medicamentos" placeholder="Quantidade" style="float:right;">
+			</li>
+			<li>Alimentos não perecíveis<input type="button" onclick="doar_lar_dos_idosos()
+" style="float:right;" value="Doar"><input type="text" id="anp" placeholder="Quantidade" style="float:right;"></li>
+			<li>Dinheiro<input type="button" onclick="doar_lar_dos_idosos()
+" style="float:right;" value="Doar"><input type="text" id="dinheiro_idosos" placeholder="Quantidade"
+					style="float:right;"></li>
+			<input type="button" id="vo1" style="float:right;" value="Voltar" onclick="troca('vo2')">
+		</ul>
+	</div>
+	<div id="ma" class="invisivel">
+		<h3>Instituto do meio ambiente</h3>
+		<table>
+			<tr>
+				<td>Endereço: </td>
+				<td class="spas"></td>
+				<td>Rua Iguassú - 1105</td>
+			</tr>
+			<tr>
+				<td>Bairro: </td>
+				<td class="spas"></td>
+				<td>Jd.Girassol</td>
+			</tr>
+			<tr>
+				<td>CEP: </td>
+				<td class="spas"></td>
+				<td>79831070</td>
+			</tr>
+			<tr>
+				<td>Cidade: </td>
+				<td class="spas"></td>
+				<td>Dourados</td>
+			</tr>
+			<tr>
+				<td>Estado: </td>
+				<td class="spas"></td>
+				<td>MS</td>
+			</tr>
+			<tr>
+				<td>País: </td>
+				<td class="spas"></td>
+				<td>Brasil</td>
+			</tr>
+			<tr>
+				<td>Telefone: </td>
+				<td class="spas"></td>
+				<td>67-3422-6471</td>
+			</tr>
+			<tr>
+				<td>E-mail:</td>
+				<td class="spas"></td>
+				<td>imadinstituto@yahoo.com.br</td>
+			</tr>
+			<tr>
+				<td>CNPJ: </td>
+				<td class="spas"></td>
+				<td>5155303000105</td>
+			</tr>
+		</table>
+		<hr id="linha">
+		</hr>
+		<h3>Coisas que a instituição está precisando</h3>
+		<ul>
+			<li>Latinha<input type="button" onclick="doar_instituto_de_meio_ambiente()" style="float:right;"
+					value="Doar"> <input type="text" id="latinha" placeholder="Quantidade" style="float:right;"></li>
+			<li>Plastico<input type="button" onclick="doar_instituto_de_meio_ambiente()" style="float:right;"
+					value="Doar"><input type="text" id="plastico" placeholder="Quantidade" style="float:right;"></li>
+			<li>Papelão<input type="button" onclick="doar_instituto_de_meio_ambiente()" style="float:right;"
+					value="Doar"><input type="text" id="papelao" placeholder="Quantidade" style="float:right;"></li>
+			<li>Utensílios tecnológicos<input type="button" onclick="doar_instituto_de_meio_ambiente()"
+					style="float:right;" value="Doar"><input type="text" id="ut" placeholder="Quantidade"
+					style="float:right;"></li>
+			<li>Dinheiro<input type="button" onclick="doar_instituto_de_meio_ambiente()" style="float:right;"
+					value="Doar"><input type="text" id="dinheiro_meio_ambiente" placeholder="Quantidade"
+					style="float:right;"></li>
+			<input type="button" id="vo1" style="float:right;" value="Voltar" onclick="troca('vo3')">
+		</ul>
+	</div>
+	<div id="mostrar" class="invisivel">
+
+	</div>
+	<script type="text/javascript" src="projetoo.js"></script>
+	<script type="text/javascript" src="cadastro.js"></script>
+	<script type="text/javascript" src="login.js"></script>
+	<script type="text/javascript" src="lar_santa_rita_doar.js"></script>
+	<script type="text/javascript" src="lar_dos_idosos_doar.js"></script>
+	<script type="text/javascript" src="instituto_de_meio_ambiente_doar.js"></script>
+	<script type="text/javascript" src="mostrar_doadores.js"></script>
+</body>
+
+</html>
