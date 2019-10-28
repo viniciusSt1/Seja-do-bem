@@ -1,1 +1,1 @@
-# Trabalho-com-utilização-Js-orientado-a-Objeto
+# Trabalho-com-utilização-da-linguagem-Javascript-orientada-a-Objeto
