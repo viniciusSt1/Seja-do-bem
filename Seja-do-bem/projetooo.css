@@ -1,0 +1,573 @@
+h1 {
+    background-image: linear-gradient(to right, #87CCEB, transparent, transparent, transparent);
+    border-radius: 10px;
+}
+
+body {
+    font: cursive;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top right, rgb(42, 0, 255), #ffffff, #00ff22);
+    background-size: 400% 400%;
+    animation: fundo 15s ease-in-out infinite;
+}
+
+@keyframes fundo {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+        /*transform: rotate(180deg);*/
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.s {
+    border-top: solid;
+    border-bottom: solid;
+    border-color: white;
+    font-size: 25px;
+    color: white;
+    text-shadow: rgba(1220, 100, 128, .8) 0px 0px 4px;
+}
+
+button {
+    -webkit-transition-duration: 0.4s;
+    border-radius: 30px;
+    border-color: black;
+    background-color: #3B5990;
+    font-size: 15px;
+}
+
+button:hover,
+h1:hover {
+    cursor: pointer;
+}
+
+@keyframes vinicius {
+    from {
+        border-color: red;
+    }
+    to {
+        border-color: black;
+    }
+}
+
+#exi,
+#err,
+#cor,
+#l1,
+#l2,
+#pre,
+#apn,#edS,#bE {
+    animation-name: opa;
+    animation-duration: 4s;
+    font-size: 16pt;
+    text-align: center;
+}
+
+#menu {
+    border: solid;
+    width: 300px;
+    animation-name: vinicius;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: blue 1px 1px 90px 1px;
+    background-color: rgba(50, 50, 120, 0.3)
+}
+
+#emp {
+    width: 400px;
+    font-family: cursive;
+    animation-name: opa;
+    animation-duration: 2s;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: blue 1px 1px 90px 1px;
+    background-color: rgba(50, 50, 120, 0.3);
+    padding: 15px;
+    border: 10px solid transparent;
+    border-image: url('imagens/border cópia1.png')30 round;
+}
+
+#cadastro {
+    animation-name: opa;
+    animation-duration: 2s;
+    width: 400px;
+    text-shadow: rgba(250, 100, 18, .8) 0px 0px 4px;
+    border: 10px solid transparent;
+    border-image: url('imagens/border cópia2.png')30 round;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    box-shadow: rgb(255, 0, 34) 1px 1px 90px 1px;
+    background-color: rgba(50, 50, 120, 0.3)
+}
+
+@media(max-width:1100px) {
+    #sejadobem,
+    #img_menus {
+        opacity: 0;
+    }
+}
+
+@media(max-height:600px) {
+    #cadastro {
+        margin-top: 100px;
+    }
+    #login,
+    #emp {
+        margin-top: 50px;
+    }
+}
+
+.item {
+    padding: 5px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flexl {
+    display: flex;
+    justify-content: center;
+}
+
+#telefone,
+#cidade,
+#idade,
+#email,
+#cpf,
+#conta,
+#senha,
+#con_senha {
+    margin-bottom: 9px;
+    width: 300px;
+}
+
+#nome,
+#sobrenome {
+    margin-bottom: 9px;
+    width: 120px;
+}
+
+#cB,#bCad2,#bEd2 {
+    width: 315px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#login {
+    animation-name: opa;
+    animation-duration: 2s;
+    text-shadow: rgba(1220, 100, 128, .8) 0px 0px 4px;
+    width: 250px;
+    border: 10px solid transparent;
+    border-image: url('imagens/border cópia1.png')30 round;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    align-items: center;
+    box-shadow: rgba(7, 7, 100, 0.637) 1px 1px 90px 1px;
+    background-color: rgba(50, 50, 120, 0.3)
+}
+
+#cri,
+#ido,
+#ma {
+    font-family: cursive;
+    animation-name: opa;
+    animation-duration: 2s;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    box-shadow: rgb(140, 0, 255) 1px 1px 90px 1px;
+    background-color: rgba(50, 50, 120, 0.3);
+    border: 10px solid transparent;
+    border-image: url('imagens/border cópia1.png')30 round;
+    width: 600px;
+}
+#perfil,#busca {
+    font-family: cursive;
+    animation-name: opa;
+    animation-duration: 2s;
+    position:absolute;
+    left:50%;
+    top:75%;
+    transform:translate(-50%,-50%);
+    display: flex;
+    flex-direction:column;
+    padding: 40px;
+    align-items: center;
+    box-shadow: rgb(0, 255, 136) 1px 1px 90px 1px;
+    background-color: rgba(50, 50, 120, 0.3);
+    border: 10px solid transparent;
+    width: 600px;
+    border-radius: 20px;
+    max-width: 100%;
+    margin-bottom:200px;
+}
+
+@keyframes opa {
+    from {
+        opacity: 0.1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bi {
+    height: 30px;
+    width: 150px;
+}
+
+.bi:hover {
+    transition-duration: 1s;
+    height: 35px;
+    width: 180px;
+    font-size: 20px;
+}
+
+.invisivel {
+    display: none;
+}
+
+.visivel {
+    display: block;
+}
+
+#exi,
+#err,
+#l1,
+#l2,
+#pre,
+#apn,#bE {
+    color: #ff0000;
+}
+
+#cor,#edS {
+    color: #2bad1f;
+    text-shadow: none;
+    font-family: cursive;
+    box-shadow: rgba(50, 50, 120, 0.3) 10px, 20px, 10px;
+}
+
+.anima {
+    display: block;
+    animation-name: opa;
+    animation-duration: 0.5s;
+}
+
+#cp,
+#np {
+    background-color: transparent;
+    border-color: rgba(0, 0, 0, 0.1);
+    color: black;
+    font-size: 17px;
+    font-family: 'Arial' fantasy;
+}
+
+#a1,
+#a2,
+#a3 {
+    border-radius: 4px;
+    border-color: blue;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 6px 10px;
+    -webkit-transition-duration: 0.4s;
+}
+
+#a1:hover,
+#a2:hover,
+#a3:hover {
+    transition-duration: 1.2s;
+    color: white;
+    box-shadow: grey 1px 1px 30px 1px;
+    background-color: black;
+    border-color: white;
+}
+
+#most {
+    border-color: black;
+    border-radius: 4px;
+    background: linear-gradient(to bottom, #15b407 5%, #d0ff00 100%);
+    box-shadow: inset 0px 1px 0px 0px #d7ecfd;
+    text-shadow: 0px 1px 0px #528009;
+    -webkit-transition-duration: 0.4s;
+    position: absolute;
+    right: 20px;
+}
+
+#most:hover {
+    transition-duration: 1s;
+    background: linear-gradient(to bottom, #960f0a 5%, #2b0a69 100%);
+    font-size: 15px;
+    color: white;
+}
+
+.spas {
+    width: 80px;
+}
+
+:placeholder-shown {
+    border-color: red;
+}
+
+#cl,
+#ls {
+    margin: 5px;
+}
+
+#img_menus {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: rgba(40, 50, 40, 0.5);
+    padding: 5px;
+    border: solid black;
+    width: 300px;
+    height: 130px;
+    margin-right: 0px;
+}
+
+#mas,
+#fem,
+#outro {
+    width: 75px;
+    height: 70px;
+    cursor: pointer;
+}
+
+#mas:hover,
+#fem:hover,
+#outro:hover {
+    box-shadow: black 1px 1px 25px 1px;
+    border-radius: 100%;
+}
+
+#an {
+    width: 85px;
+    height: 70px;
+}
+
+#dIm td {
+    padding-bottom: 9px;
+}
+
+input:active {
+    border-color: mediumvioletred;
+}
+
+input:enabled {
+    padding: 6px;
+}
+
+#conec,
+#desconec {
+    font-family: monospace;
+    font-size: 15pt;
+    color: black;
+    margin: 2px;
+}
+
+th {
+    padding: 10px;
+    ;
+}
+
+#tdn,
+#tdc {
+    display: flex;
+    justify-content: baseline;
+}
+
+#label1,
+#label2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+    text-transform: uppercase;
+}
+
+li {
+    margin: 15px;
+}
+
+.doa {
+    border-color: black;
+    border-radius: 4px;
+    background: linear-gradient(60deg, #c2cf10 5%, #ce3ad3 100%);
+    box-shadow: inset 0px 1px 0px 0px #d7ecfd;
+    text-shadow: 0px 1px 0px #528009;
+    -webkit-transition-duration: 0.4s;
+}
+
+.doa:hover {
+    transition-duration: 1s;
+    background: linear-gradient(to bottom, #080666 5%, #5e0351 100%);
+    font-size: 15px;
+    color: white;
+}
+
+hr {
+    width: 90%;
+    color: #0c0044;
+    border-top: solid;
+    border-bottom: none;
+}
+
+.x {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    border: solid;
+    cursor: pointer;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border-radius: 100%;
+}
+
+.x:hover {
+    background-color: red;
+    color: white;
+}
+
+.base {
+    display: flex;
+    justify-content: baseline;
+}
+
+.mdentro {
+    animation: slid;
+    animation-duration: 2s;
+    box-shadow: blue 1px 1px 90px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    width: 500px;
+    border-radius: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-stretch: extra-expanded;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+@keyframes slid {
+    from {
+        margin-top: 100%;
+    }
+    to {
+        margin-top: 0%;
+    }
+}
+
+.botP {
+    border: solid;
+    color: blue;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: -webkit-body;
+    margin: 5px;
+    -webkit-transition-duration: 0.9s;
+}
+
+.botP:hover {
+    cursor: pointer;
+}
+
+.botP:hover {
+    transition: 1s;
+    color: #c000c0
+}
+
+#mt div {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#start {
+    position: absolute;
+    left: 120px;
+    font-size: 16pt;
+    margin-bottom: 3px;
+}
+
+#end {
+    position: absolute;
+    right: 120px;
+    font-size: 16pt;
+    margin-bottom: 3px;
+}
+
+input[type=button] {
+    cursor: pointer;
+}
+
+#selo,#seloB {
+    height: 100px;
+    width: 120px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+#dentroBusca{
+    animation-name: opa;
+    animation-duration: 2s;
+    text-shadow: rgba(1220, 100, 128, .8) 0px 0px 4px;
+    width: 250px;
+    border: 10px solid transparent;
+    border-image: url('imagens/border cópia1.png')30 round;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    align-items: center;
+    box-shadow: rgba(7, 7, 100, 0.637) 1px 1px 90px 1px;
+    background-color: rgba(50, 50, 120, 0.3)
+}
